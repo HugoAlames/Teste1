@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Pedido</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="cards-bg">
+    
+  <ion-card class="adv-map">
+    <div style="position: relative">
+      <img src="https://ionicframework.com/dist/preview-app/www/assets/img/advance-card-map-paris.png">
+      <ion-fab right top>
+        <button ion-fab color="secondary">
+          <ion-icon name="pin"></ion-icon>
+        </button>
+      </ion-fab>
+    </div>
+    <ion-item>
+        <p>{{label1}}</p>
+        <p>{{sloDisplay1}}</p>
+      </ion-item>
+    <ion-item>
+        <h2>Origem</h2>
+        <p>{{origem}}</p>
+    </ion-item>
+    <ion-item>
+      <h2>Destino</h2>
+      <p>{{destino}}</p>
+    </ion-item>
+    <ion-item actions>
+      <span ion-text item-start color="secondary" class="item-bold">R$ {{price1}}</span>
+      <button ion-button color="secondary" clear item-end icon-start>
+        <ion-icon name='navigate'></ion-icon>
+        Solicitar
+      </button>
+    </ion-item>
+  </ion-card>
+
+
+
+  <ion-card class="adv-map">
+      <div style="position: relative">
+        <img src="https://ionicframework.com/dist/preview-app/www/assets/img/advance-card-map-paris.png">
+        <ion-fab right top>
+          <button ion-fab color="secondary">
+            <ion-icon name="pin"></ion-icon>
+          </button>
+        </ion-fab>
+      </div>
+      <ion-item>
+          <p>{{label2}}</p>
+          <p>{{sloDisplay2}}</p>
+        </ion-item>
+      <ion-item>
+          <h2>Origem</h2>
+          <p>{{origem}}</p>
+      </ion-item>
+      <ion-item>
+        <h2>Destino</h2>
+        <p>{{destino}}</p>
+      </ion-item>
+      <ion-item actions>
+        <span ion-text item-start color="secondary" class="item-bold">R$ {{price2}}</span>
+        <button ion-button color="secondary" clear item-end icon-start>
+          <ion-icon name='navigate'></ion-icon>
+          Solicitar
+        </button>
+      </ion-item>
+    </ion-card>
+  
+  
+  </ion-content>

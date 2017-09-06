@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="helpieX">
+    <ion-title>HelpieX</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 style="color:#dd4b39">Fazer Pedido</h2>
+  <form (ngSubmit)="saveOrder()">
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary" stacked>Endereço de origem</ion-label>
+      <ion-input [(ngModel)]="origem" [ngModelOptions]="{standalone: true}" type="text" value="{{origem.value}}"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Endereço de destino</ion-label>
+      <ion-input [(ngModel)]="destino" [ngModelOptions]="{standalone: true}" type="text" value="{{destino.value}}"></ion-input>
+    </ion-item>
+
+    <input type="hidden" [ngModelOptions]="{standalone: true}" [(ngModel)]="origemLat" value="{{origemLat.value}}">
+    <input type="hidden" [ngModelOptions]="{standalone: true}" [(ngModel)]="origemLong" value="{{origemLong.value}}">
+    <button ion-button full color="defaul" style="margin-top:10px" type="submit">Fazer Pedido</button>
+  </ion-list>
+  </form>
+</ion-content>

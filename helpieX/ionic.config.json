@@ -1,0 +1,8 @@
+{
+  "name": "helpieX",
+  "app_id": "ccfe991c",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
